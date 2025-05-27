@@ -1,0 +1,2 @@
+Multithreading is a technique where multiple threads execute independently but share the same resources.
+This is useful for tasks like file processing, web scraping, and parallel computations.
