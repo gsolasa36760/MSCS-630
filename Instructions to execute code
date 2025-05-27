@@ -1,0 +1,5 @@
+Instructions to run the Program
+•	Open https://www.onlinegdb.com/online_python_compiler
+•	Replace the editor content with the full word_counter.py code
+•	Click the "New File" tab, create sample.txt, and paste the text content
+•	Click Run
