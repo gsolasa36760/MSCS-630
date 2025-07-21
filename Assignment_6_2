@@ -1,0 +1,67 @@
+// Base class
+class Vehicle {
+    public void forward() {
+        System.out.println("Vehicle is moving forward");
+    }
+
+    public void reverse() {
+        System.out.println("Vehicle is reversing");
+    }
+}
+
+// SUV class
+class SUV extends Vehicle {
+    @Override
+    public void forward() {
+        System.out.println("SUV is moving forward with 4-wheel drive");
+    }
+
+    @Override
+    public void reverse() {
+        System.out.println("SUV is reversing with parking sensors");
+    }
+}
+
+// SportsCar class
+class SportsCar extends Vehicle {
+    @Override
+    public void forward() {
+        System.out.println("SportsCar accelerates quickly forward");
+    }
+
+    @Override
+    public void reverse() {
+        System.out.println("SportsCar is reversing with rear-view camera");
+    }
+}
+
+// Hybrid class
+class Hybrid extends Vehicle {
+    @Override
+    public void forward() {
+        System.out.println("Hybrid is moving forward using electric mode");
+    }
+
+    @Override
+    public void reverse() {
+        System.out.println("Hybrid is reversing silently");
+    }
+}
+
+// Test class
+public class Main {
+    public static void main(String[] args) {
+        Vehicle mySUV = new SUV();
+        Vehicle mySportsCar = new SportsCar();
+        Vehicle myHybrid = new Hybrid();
+
+        mySUV.forward();
+        mySUV.reverse();
+
+        mySportsCar.forward();
+        mySportsCar.reverse();
+
+        myHybrid.forward();
+        myHybrid.reverse();
+    }
+}
